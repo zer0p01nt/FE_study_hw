@@ -196,3 +196,10 @@ button {
   height: 14px;
   align-items: center;
 }
+
+@media (max-width: 640px) {
+  .detail-bottom {
+    background-color: var(--main-whitegray);
+    margin-bottom: 0;
+  }
+}
