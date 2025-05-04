@@ -4,18 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="icon" href="../img/nav.logo.png" />
+    <link rel="apple-touch-icon" href="../img/nav.logo.png" />
     <title>에브리타임</title>
   </head>
   <body>
-    <header>
-      <div class="hd-logo">
-        <img src="../img/nav.logo.png" alt="에브리타임 로고" />
-        <div class="hd-logo-text">
-          <div>에브리타임</div>
-          <div>덕성여대</div>
+    <div class="mini-header">
+      <input type="checkbox" id="hamburger" />
+      <label for="hamburger" class="hamburger-button">
+        <img src="../img/aside.title.hamburger.png" alt="햄버거 아이콘" />
+      </label>
+      <label for="hamburger" class="darken"></label>
+      <div class="hd">
+        <div class="hd-logo">
+          <img src="../img/nav.logo.png" alt="에브리타임 로고" />
+          <div class="hd-logo-text">
+            <div>에브리타임</div>
+            <div>덕성여대</div>
+          </div>
         </div>
-      </div>
-      <div class="hd-menu">
         <ul class="hd-menu">
           <li class="selected-menu">게시판</li>
           <li>시간표</li>
@@ -25,7 +32,34 @@
           <li>책방</li>
           <li>캠퍼스픽</li>
         </ul>
+        <div class="hd-btn">
+          <button>
+            <img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" />
+          </button>
+          <button>
+            <img src="../img/icn_m_account_gray800_light.png" alt="프로필" />
+          </button>
+        </div>
       </div>
+      <a href="main.html">비밀게시판</a>
+    </div>
+    <header>
+      <div class="hd-logo">
+        <img src="../img/nav.logo.png" alt="에브리타임 로고" />
+        <div class="hd-logo-text">
+          <div>에브리타임</div>
+          <div>덕성여대</div>
+        </div>
+      </div>
+      <ul class="hd-menu">
+        <li class="selected-menu">게시판</li>
+        <li>시간표</li>
+        <li>강의실</li>
+        <li>학점계산기</li>
+        <li>친구</li>
+        <li>책방</li>
+        <li>캠퍼스픽</li>
+      </ul>
       <div class="hd-btn">
         <button>
           <img src="../img/icn_m_chat_gray800_light.png" alt="쪽지" />
@@ -35,74 +69,76 @@
         </button>
       </div>
     </header>
-    <nav>
-      <div>
-        <div class="nav-line"></div>
-        <ul>
-          <li>자유게시판</li>
-          <li class="selected-category">비밀게시판</li>
-          <li>질문게시판</li>
-          <li>졸업생게시판</li>
-          <li>새내기게시판</li>
-          <li>시사·이슈</li>
-          <li>정보게시판</li>
-          <li>이벤트게시판</li>
-          <li>홍보게시판</li>
-          <li>동아리·학회</li>
-        </ul>
-        <div class="nav-line"></div>
-        <ul>
-          <li>취업·진로</li>
-          <li>교직이수</li>
-          <li>덕성 예비공무원들♡</li>
-          <li>대학원 뿌숭뿌슝</li>
-          <li>미래의 회계사&#40;CPA&#41; 세무사&#40;CTA&#41;</li>
-          <li>덕성 로스쿨러들</li>
-        </ul>
-        <div class="nav-line"></div>
-        <ul>
-          <li>총학생회</li>
-          <li>신문사</li>
-          <li>영자신문사</li>
-          <li>운현방송국</li>
-          <li>대학일자리본부</li>
-          <li>교지편집위원회</li>
-          <li>과학기술대학 학생회</li>
-          <li class="nav-more">더 보기</li>
-        </ul>
-        <div class="nav-line"></div>
-        <ul>
-          <li>덕성여대 경영학과</li>
-          <li>디지털소프트웨어공학부 게시판</li>
-          <li>국제통상학과</li>
-          <li>두드리는 회계학과</li>
-          <li>열공하는 약대생</li>
-          <li>심리학과 자게</li>
-          <li>덕성 법학도</li>
-          <li class="nav-more">더 보기</li>
-        </ul>
-        <div class="nav-line"></div>
-        <ul>
-          <li>덕성여대 장터</li>
-          <li>덕성여대 기숙사</li>
-          <li>뻔선뻔후 찾기 프로젝트</li>
-          <li>덕성 연애방</li>
-          <li>덕성여대 자취생 모임</li>
-          <li>주의 없는 게시판</li>
-          <li>퀴어이기 전에 여성</li>
-          <li>덕성여대~수유역 맛집</li>
-          <li>덕성 야구게시판</li>
-          <li>덕성의 국가근로동자들</li>
-          <li>덕성 파견학생</li>
-          <li>덕친소 : 내 덕친은 누구인가</li>
-          <li>미팅 모집방</li>
-          <li>덕성의 아이돌</li>
-          <li>다이어덕</li>
-          <li class="nav-more">더 보기</li>
-        </ul>
-        <div class="nav-line"></div>
-      </div>
-    </nav>
+    <div class="nav-wrapper">
+      <nav>
+        <div>
+          <div class="nav-line"></div>
+          <ul>
+            <li>자유게시판</li>
+            <li class="selected-category">비밀게시판</li>
+            <li>질문게시판</li>
+            <li>졸업생게시판</li>
+            <li>새내기게시판</li>
+            <li>시사·이슈</li>
+            <li>정보게시판</li>
+            <li>이벤트게시판</li>
+            <li>홍보게시판</li>
+            <li>동아리·학회</li>
+          </ul>
+          <div class="nav-line"></div>
+          <ul>
+            <li>취업·진로</li>
+            <li>교직이수</li>
+            <li>덕성 예비공무원들♡</li>
+            <li>대학원 뿌숭뿌슝</li>
+            <li>미래의 회계사&#40;CPA&#41; 세무사&#40;CTA&#41;</li>
+            <li>덕성 로스쿨러들</li>
+          </ul>
+          <div class="nav-line"></div>
+          <ul>
+            <li>총학생회</li>
+            <li>신문사</li>
+            <li>영자신문사</li>
+            <li>운현방송국</li>
+            <li>대학일자리본부</li>
+            <li>교지편집위원회</li>
+            <li>과학기술대학 학생회</li>
+            <li class="nav-more">더 보기</li>
+          </ul>
+          <div class="nav-line"></div>
+          <ul>
+            <li>덕성여대 경영학과</li>
+            <li>디지털소프트웨어공학부 게시판</li>
+            <li>국제통상학과</li>
+            <li>두드리는 회계학과</li>
+            <li>열공하는 약대생</li>
+            <li>심리학과 자게</li>
+            <li>덕성 법학도</li>
+            <li class="nav-more">더 보기</li>
+          </ul>
+          <div class="nav-line"></div>
+          <ul>
+            <li>덕성여대 장터</li>
+            <li>덕성여대 기숙사</li>
+            <li>뻔선뻔후 찾기 프로젝트</li>
+            <li>덕성 연애방</li>
+            <li>덕성여대 자취생 모임</li>
+            <li>주의 없는 게시판</li>
+            <li>퀴어이기 전에 여성</li>
+            <li>덕성여대~수유역 맛집</li>
+            <li>덕성 야구게시판</li>
+            <li>덕성의 국가근로동자들</li>
+            <li>덕성 파견학생</li>
+            <li>덕친소 : 내 덕친은 누구인가</li>
+            <li>미팅 모집방</li>
+            <li>덕성의 아이돌</li>
+            <li>다이어덕</li>
+            <li class="nav-more">더 보기</li>
+          </ul>
+          <div class="nav-line"></div>
+        </div>
+      </nav>
+    </div>
     <main>
       <section>
         <div class="sec-title">
@@ -135,12 +171,14 @@
             </span>
           </div>
         </div>
-        <div class="sec-write">
-          <div>새 글을 작성해주세요!</div>
-          <img
-            src="../img/container.write.background.png"
-            alt="글 작성 아이콘"
-          />
+        <div class="sec-write-wrapper">
+          <div class="sec-write">
+            <div>새 글을 작성해주세요!</div>
+            <img
+              src="../img/container.write.background.png"
+              alt="글 작성 아이콘"
+            />
+          </div>
         </div>
         <article>
           <a href="./detail.html">
