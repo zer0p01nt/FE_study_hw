@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입</title>
+    <link rel="stylesheet" href="../css/signup.css" />
+    <link rel="icon" href="../img/nav.logo.png" />
+    <link rel="apple-touch-icon" href="../img/nav.logo.png" />
+  </head>
+  <body>
+    <main>
+      <div class="textbox">
+        <div class="title">에브리타임 회원가입</div>
+        <div class="text">
+          <span>에브리타임 계정으로</span>
+          <span>캠퍼스픽, 에브리타임 </span>
+          <span>등</span>
+          <div>다양한 대학생 서비스를 모두 이용하실 수 있습니다.</div>
+        </div>
+      </div>
+      <form>
+        <label>
+          이름
+          <input
+            type="text"
+            id="name"
+            class="box input-box"
+            placeholder="이름을 입력하세요."
+          />
+        </label>
+        <label>
+          닉네임
+          <input
+            type="text"
+            id="nickname"
+            class="box input-box"
+            placeholder="닉네임을 입력하세요."
+          />
+        </label>
+        <label>
+          이메일
+          <input
+            type="email"
+            id="email"
+            class="box input-box"
+            placeholder="이메일을 입력하세요."
+          />
+        </label>
+        <label>
+          비밀번호
+          <input
+            type="password"
+            id="password"
+            class="box input-box"
+            placeholder="숫자/글자 조합, 최소 8자 이상"
+          />
+        </label>
+        <label>
+          비밀번호 재입력
+          <input
+            type="password"
+            id="password-re"
+            class="box input-box"
+            placeholder="비밀번호를 재입력하세요."
+          />
+        </label>
+        <input
+          type="submit"
+          class="box submit-box"
+          id="signup"
+          value="회원가입"
+        />
+      </form>
+    </main>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>

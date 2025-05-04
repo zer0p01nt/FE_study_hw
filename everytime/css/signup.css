@@ -1,0 +1,73 @@
+@import url(./login.css);
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  width: 500px;
+  height: auto;
+  border: var(--border);
+  border-radius: 10px;
+  margin: 40px auto;
+  padding: 30px;
+  gap: 20px;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: start;
+}
+
+.title {
+  color: var(--signup-black);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text {
+  color: var(--main-darkgray);
+  font-size: 14px;
+}
+
+.text span:nth-child(2) {
+  color: var(--signup-black);
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: var(--main-darkgray);
+  font-weight: 500;
+}
+
+.box {
+  width: 500px;
+}
+
+.submit-box {
+  margin-top: 40px;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 75vw;
+  }
+
+  .box {
+    width: 75vw;
+  }
+}
