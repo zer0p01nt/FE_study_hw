@@ -1,0 +1,167 @@
+:root {
+  --main-red: #f91f15;
+  --main-lightgray: #d6d6d6;
+  --main-gray: #a6a6a6;
+  --main-lightblack: #444444;
+  --main-whitegray: #f9f9f9;
+  --main-color: #666;
+  --border: 1px solid var(--main-lightgray);
+  --main-darkgray: #737373;
+  --main-mint: #05bcbc;
+  --main-lightmint: #edfffe;
+  --main-black: #262626;
+  --login-gray: #f2f2f2;
+  --signup-black: #292929;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 210px;
+  height: 56px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.box {
+  border-radius: 10px;
+  width: 500px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  outline: none;
+}
+
+.input-box {
+  background-color: var(--login-gray);
+}
+
+.input-box::placeholder {
+  color: var(--main-gray);
+}
+
+.submit-box {
+  background-color: var(--main-darkgray);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 480px;
+  margin: 10px 10px 0;
+}
+
+.settings label,
+#remain-login {
+  display: inline-flex;
+  gap: 8px;
+  color: var(--main-gray);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#remain-login:checked {
+  accent-color: var(--main-red);
+}
+
+.settings > input {
+  background-color: white;
+  color: var(--main-darkgray);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#link {
+  background: none;
+  text-decoration-line: underline;
+  color: var(--main-darkgray);
+  margin: 100px 0px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  color: var(--main-darkgray);
+  font-size: 13px;
+}
+
+footer li {
+  cursor: pointer;
+}
+
+footer li:nth-child(even) {
+  font-weight: 500;
+}
+
+@media (max-width: 640px) {
+  .logo img {
+    width: 300px;
+    height: auto;
+  }
+
+  .box {
+    width: 90vw;
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .settings {
+    width: 85vw;
+    margin: 10px 2.5vw 0;
+  }
+
+  #link {
+    font-size: 16px;
+  }
+
+  main {
+    height: 85vh;
+    margin-top: 30px;
+  }
+
+  footer {
+    height: 15vh;
+  }
+}

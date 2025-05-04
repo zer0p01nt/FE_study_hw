@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인</title>
+    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="icon" href="../img/nav.logo.png" />
+    <link rel="apple-touch-icon" href="../img/nav.logo.png" />
+  </head>
+  <body>
+    <main>
+      <div class="logo">
+        <img src="../img/logo.png" alt="에브리타임 로고" />
+      </div>
+      <form>
+        <input type="text" class="box input-box" id="id" placeholder="아이디" />
+        <input
+          type="password"
+          class="box input-box"
+          id="password"
+          minlength="8"
+          placeholder="비밀번호"
+        />
+        <input
+          type="submit"
+          class="box submit-box"
+          id="login"
+          value="에브리타임 로그인"
+        />
+        <div class="settings">
+          <label for="remain-login">
+            <input type="checkbox" id="remain-login" />
+            로그인 유지</label
+          >
+          <input type="button" id="find" value="아이디/비밀번호 찾기" />
+        </div>
+        <input
+          type="button"
+          id="link"
+          value="회원가입"
+          onClick="location.href='./signup.html'"
+        />
+      </form>
+      <footer>
+        <li>이용약관</li>
+        <li>개인정보처리방침</li>
+        <li>문의하기</li>
+        <li>ⓒ 에브리타임</li>
+      </footer>
+    </main>
+    <script src="../js/login.js"></script>
+  </body>
+</html>
