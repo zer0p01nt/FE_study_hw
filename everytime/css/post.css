@@ -61,6 +61,7 @@ li {
 }
 
 .q-info {
+  width: 100%;
   background-color: var(--main-lightmint);
   padding: 8px;
   color: var(--main-mint);
