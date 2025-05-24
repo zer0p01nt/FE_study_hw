@@ -57,6 +57,7 @@ input {
   margin: 0;
   padding: 0;
   border: none;
+  outline: none;
 }
 
 .box {
@@ -65,7 +66,6 @@ input {
   padding: 10px;
   box-sizing: border-box;
   font-size: 15px;
-  outline: none;
 }
 
 .input-box {
@@ -74,6 +74,21 @@ input {
 
 .input-box::placeholder {
   color: var(--main-gray);
+}
+
+.pass-box {
+  position: relative;
+}
+
+.pass-btn {
+  color: var(--main-darkgray);
+  background-color: none;
+  border: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  cursor: pointer;
 }
 
 .submit-box {
@@ -119,7 +134,7 @@ input {
   cursor: pointer;
 }
 
-footer {
+footer ul {
   display: flex;
   justify-content: center;
   gap: 50px;
@@ -145,6 +160,10 @@ footer li:nth-child(even) {
     width: 90vw;
     padding: 15px;
     font-size: 18px;
+  }
+
+  .pass-btn {
+    right: 15px;
   }
 
   .settings {

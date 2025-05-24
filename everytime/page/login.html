@@ -7,6 +7,10 @@
     <link rel="stylesheet" href="../css/login.css" />
     <link rel="icon" href="../img/nav.logo.png" />
     <link rel="apple-touch-icon" href="../img/nav.logo.png" />
+    <script
+      src="https://kit.fontawesome.com/3a193b46ca.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <main>
@@ -15,13 +19,18 @@
       </div>
       <form>
         <input type="text" class="box input-box" id="id" placeholder="아이디" />
-        <input
-          type="password"
-          class="box input-box"
-          id="password"
-          minlength="8"
-          placeholder="비밀번호"
-        />
+        <div class="pass-box">
+          <input
+            type="password"
+            class="box input-box"
+            id="password"
+            minlength="8"
+            placeholder="비밀번호"
+          />
+          <button class="pass-btn">
+            <i class="pass-btn-i fas fa-eye fa-lg"></i>
+          </button>
+        </div>
         <input
           type="submit"
           class="box submit-box"
@@ -43,10 +52,12 @@
         />
       </form>
       <footer>
-        <li>이용약관</li>
-        <li>개인정보처리방침</li>
-        <li>문의하기</li>
-        <li>ⓒ 에브리타임</li>
+        <ul>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>문의하기</li>
+          <li>ⓒ 에브리타임</li>
+        </ul>
       </footer>
     </main>
     <script src="../js/login.js"></script>
