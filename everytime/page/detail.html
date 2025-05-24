@@ -10,12 +10,10 @@
   </head>
   <body>
     <div class="mini-header">
-      <input type="checkbox" id="hamburger" />
-      <label for="hamburger" class="hamburger-button">
+      <button class="hamburger">
         <img src="../img/aside.title.hamburger.png" alt="햄버거 아이콘" />
-      </label>
-      <label for="hamburger" class="darken"></label>
-      <div class="hd">
+      </button>
+      <div class="mini-side hidden">
         <div class="hd-logo">
           <img src="../img/nav.logo.png" alt="에브리타임 로고" />
           <div class="hd-logo-text">
@@ -43,6 +41,7 @@
       </div>
       <a href="main.html">비밀게시판</a>
     </div>
+    <div class="darken hidden"></div>
     <header>
       <div class="hd-logo">
         <img src="../img/nav.logo.png" alt="에브리타임 로고" />
@@ -181,7 +180,7 @@
                 src="../img/container.articles.vote.png"
                 alt="공감"
               />
-              <span class="react-vote">12</span>
+              <span class="react-vote dt-react-vote">12</span>
               <img
                 class="icon-img"
                 src="../img/container.articles.comment.png"
@@ -196,40 +195,173 @@
               <span class="react-scrap">3</span>
             </div>
             <div class="detail-btns">
-              <button>
+              <button id="vote-btn">
                 <img
                   src="../img/container.articles.buttons.posvote.png"
                   alt="공감 버튼"
                 />
                 공감
               </button>
-              <button>
+              <button id="scrap-btn">
                 <img
                   src="../img/container.articles.buttons.scrap.png"
                   alt="스크랩 버튼"
+                  class="scrap-btn-icon"
                 />
-                스크랩
+                <span class="scrap-btn-text">스크랩</span>
               </button>
+            </div>
+          </div>
+        </div>
+        <div class="comments">
+          <div class="comment" id="comment1">
+            <div class="com">
+              <div class="com-hd">
+                <div class="com-hd-profile">
+                  <img
+                    src="../img/anonymous.profile.png"
+                    alt="익명 프로필 사진"
+                  />
+                  <div class="com-hd-profile-name">익명1</div>
+                </div>
+                <div class="com-hd-message">
+                  <button class="com-com-btn" value="1">대댓글</button>
+                  <button class="com-vote-btn">공감</button>
+                  <button>쪽지</button>
+                  <button>신고</button>
+                </div>
+              </div>
+              <div class="com-content">저는 팅클이를 좋아해요!</div>
+              <div class="com-footer">
+                <div class="com-time">05/21 23:23</div>
+                <div class="com-vote">
+                  <img
+                    class="icon-img"
+                    src="../img/container.articles.vote.png"
+                    alt="공감"
+                  />
+                  <span class="react-vote">12</span>
+                </div>
+              </div>
+            </div>
+            <div class="com-com">
+              <div class="com-hd">
+                <div class="com-hd-profile">
+                  <img
+                    src="../img/anonymous.profile.png"
+                    alt="익명 프로필 사진"
+                  />
+                  <div class="com-hd-profile-name com-owner">
+                    익명&#40;글쓴이&#41;
+                  </div>
+                </div>
+                <div class="com-hd-message">
+                  <button class="com-vote-btn">공감</button>
+                  <button>쪽지</button>
+                  <button>신고</button>
+                </div>
+              </div>
+              <div class="com-content">팅클이도 귀엽죠~</div>
+              <div class="com-footer">
+                <div class="com-time">방금</div>
+                <div class="com-vote hidden">
+                  <img
+                    class="icon-img"
+                    src="../img/container.articles.vote.png"
+                    alt="공감"
+                  />
+                  <span class="react-vote">12</span>
+                </div>
+              </div>
+            </div>
+            <div class="com-comment hidden">
+              <form>
+                <input
+                  class="com-comment-input"
+                  type="text"
+                  placeholder="대댓글을 입력하세요."
+                />
+                <label class="comment-anonymous">
+                  <input type="checkbox" value="#" />
+                  익명</label
+                >
+                <button type="submit" class="submit-btn com-comment-submit">
+                  <img
+                    src="../img/container.articles.write.submit.png"
+                    alt="대댓글 작성 버튼"
+                  />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="comment" id="comment2">
+            <div class="com">
+              <div class="com-hd">
+                <div class="com-hd-profile">
+                  <img
+                    src="../img/anonymous.profile.png"
+                    alt="익명 프로필 사진"
+                  />
+                  <div class="com-hd-profile-name">익명2</div>
+                </div>
+                <div class="com-hd-message">
+                  <button class="com-com-btn" value="2">대댓글</button>
+                  <button class="com-vote-btn">공감</button>
+                  <button>쪽지</button>
+                  <button>신고</button>
+                </div>
+              </div>
+              <div class="com-content">콩물이가 항상 행복하길,,</div>
+              <div class="com-footer">
+                <div class="com-time">05/22 00:03</div>
+                <div class="com-vote">
+                  <img
+                    class="icon-img"
+                    src="../img/container.articles.vote.png"
+                    alt="공감"
+                  />
+                  <span class="react-vote">52</span>
+                </div>
+              </div>
+            </div>
+            <div class="com-comment hidden">
+              <form>
+                <input
+                  class="com-comment-input"
+                  type="text"
+                  placeholder="대댓글을 입력하세요."
+                />
+                <label class="comment-anonymous">
+                  <input type="checkbox" value="#" />
+                  익명</label
+                >
+                <button type="submit" class="submit-btn com-comment-submit">
+                  <img
+                    src="../img/container.articles.write.submit.png"
+                    alt="대댓글 작성 버튼"
+                  />
+                </button>
+              </form>
             </div>
           </div>
         </div>
         <div class="detail-comment">
           <form>
-            <div class="detail-comment-input">
-              <input type="text" placeholder="댓글을 입력하세요." />
-            </div>
-            <div class="detail-comment-submit">
-              <div>
-                <input type="checkbox" value="#" id="comment-anonymous" />
-                <label for="comment-anonymous">익명</label>
-              </div>
-              <button type="submit" class="submit-btn">
-                <img
-                  src="../img/container.articles.write.submit.png"
-                  alt="글 작성 버튼"
-                />
-              </button>
-            </div>
+            <input
+              id="detail-comment-input"
+              type="text"
+              placeholder="댓글을 입력하세요."
+            />
+            <label class="comment-anonymous">
+              <input type="checkbox" value="#" />
+              익명</label
+            >
+            <button type="submit" class="submit-btn" id="detail-comment-submit">
+              <img
+                src="../img/container.articles.write.submit.png"
+                alt="댓글 작성 버튼"
+              />
+            </button>
           </form>
         </div>
         <div class="detail-bottom">
@@ -363,28 +495,30 @@
       <div>
         <div style="font-weight: 500">비누랩스 주식회사</div>
         <ul>
-          <span>서울특별시 마포구 양화로 113, 5층</span>
-          <span>|</span>
-          <span>사업자등록번호 : 407-88-00024</span>
-          <span>|</span>
-          <span>직업정보제공사업 신고번호 : J1204020230008</span>
+          <li>서울특별시 마포구 양화로 113, 5층</li>
+          <li>|</li>
+          <li>사업자등록번호 : 407-88-00024</li>
+          <li>|</li>
+          <li>직업정보제공사업 신고번호 : J1204020230008</li>
         </ul>
       </div>
       <ul>
         <li>이용약관</li>
-        <span>|</span>
+        <li>|</li>
         <li style="font-weight: 500">개인정보처리방침</li>
-        <span>|</span>
+        <li>|</li>
         <li>청소년보호정책</li>
-        <span>|</span>
+        <li>|</li>
         <li>커뮤니티이용규칙</li>
-        <span>|</span>
+        <li>|</li>
         <li>공지사항</li>
-        <span>|</span>
+        <li>|</li>
         <li>문의하기</li>
-        <span>|</span>
+        <li>|</li>
         <li style="font-weight: 500">ⓒ 에브리타임</li>
       </ul>
     </footer>
+    <script src="../js/detail.js"></script>
+    <script src="../js/sidebar.js"></script>
   </body>
 </html>

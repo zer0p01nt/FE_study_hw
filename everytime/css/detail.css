@@ -6,7 +6,6 @@ button {
 
 .detail {
   margin-bottom: 0;
-  border-bottom: 0;
 }
 
 .detail-hd {
@@ -41,8 +40,9 @@ button {
   align-items: flex-start;
 }
 
-.detail-hd-message button {
-  background-color: white;
+.detail-hd-message button,
+.com-hd-message button {
+  background: none;
   border: none;
   font-size: 12px;
   color: var(--main-gray);
@@ -55,6 +55,12 @@ button {
 
 .detail-content {
   margin: 15px 0;
+}
+
+.detail-content,
+.com-content {
+  color: var(--main-lightblack);
+  font-size: 14px;
 }
 
 .detail-content-image {
@@ -102,29 +108,130 @@ button {
   margin-right: 2px;
 }
 
+.comments {
+  margin: 0;
+  padding: 0;
+  border-top: none;
+}
+
+.comment {
+  border-bottom: var(--border);
+}
+
+.comment:last-child {
+  border-bottom: none;
+}
+
+.com {
+  padding: 15px;
+}
+
+.com-hd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.com-hd-profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.com-hd-profile img {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+}
+
+.com-hd-profile-name {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.com-owner {
+  color: var(--main-mint);
+}
+
+.com-content {
+  margin: 5px 0;
+}
+
+.com-footer {
+  display: flex;
+  font-size: 12px;
+  gap: 5px;
+}
+
+.com-time {
+  color: var(--main-gray);
+}
+
+.com-vote {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.com-vote.hidden {
+  display: none;
+}
+
+.com-com {
+  padding: 10px;
+  border: var(--border);
+  background-color: var(--main-whitegray);
+}
+
+.com-com,
+.com-comment {
+  margin: 0 4px 4px 35px;
+}
+
+.com-comment {
+  padding: 0;
+  border: var(--border);
+}
+
 .detail-comment {
   padding: 0;
   margin: 0;
-  border: (--border);
+  border: var(--border);
+  border-top: none;
 }
 
-.detail-comment form {
+.detail-comment form,
+.com-comment form {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-whitegray);
-  width: 100%;
 }
 
-.detail-comment-submit,
-.detail-comment-submit div {
+.comment-anonymous {
   display: flex;
   align-items: center;
   gap: 2px;
+  cursor: pointer;
+  color: var(--main-color);
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+  white-space: nowrap;
 }
 
-.detail-comment-input input {
+.comment-anonymous input:checked {
+  accent-color: var(--main-red);
+}
+
+.comment-anonymous:has(input:checked) {
+  color: var(--main-red);
+}
+
+#detail-comment-input,
+.com-comment-input {
   border: none;
+  width: 100%;
   height: 40px;
   background-color: var(--main-whitegray);
   box-sizing: border-box;
@@ -132,26 +239,6 @@ button {
   width: 100%;
   cursor: pointer;
   outline: none;
-}
-
-.detail-comment-submit input {
-  text-align: center;
-}
-
-.detail-comment-submit input:checked {
-  accent-color: var(--main-red);
-}
-
-.detail-comment-submit label {
-  cursor: pointer;
-  color: var(--main-color);
-  font-size: 14px;
-  font-weight: 500;
-  text-align: center;
-}
-
-.detail-comment-submit input:checked + label {
-  color: var(--main-red);
 }
 
 .submit-btn {
