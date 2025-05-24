@@ -1,3 +1,5 @@
+@import url(../css/post.css);
+
 :root {
   --main-red: #f91f15;
   --main-lightgray: #d6d6d6;
@@ -31,8 +33,21 @@ li:hover {
   cursor: pointer;
 }
 
+.hidden {
+  display: none;
+}
+
 .mini-header {
   display: none;
+}
+
+.darken {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 header {
@@ -253,9 +268,22 @@ section > div {
   padding: 0px 10px;
 }
 
+.sec-write.hidden {
+  display: none;
+}
+
+#write-btn {
+  border: none;
+  background-color: var(--main-whitegray);
+  padding: 0;
+}
+
 .sec-write img {
   width: 40px;
   height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 article a {
@@ -516,9 +544,12 @@ footer > ul {
   margin: 0px 15%;
 }
 
-footer span,
 footer li {
   font-size: 14px;
+}
+
+footer li:nth-child(even) {
+  cursor: default;
 }
 
 footer ul {
@@ -563,11 +594,7 @@ footer li:hover {
     color: var(--main-black);
   }
 
-  #hamburger {
-    display: none;
-  }
-
-  .hamburger-button {
+  .hamburger {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -576,30 +603,15 @@ footer li:hover {
     cursor: pointer;
   }
 
-  .hamburger-button img {
+  .hamburger img {
     width: 30px;
     height: 30px;
     justify-content: center;
     align-items: center;
   }
 
-  .darken {
-    display: none;
+  .mini-side {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 90;
-  }
-
-  .hd {
-    position: fixed;
-    left: -300%;
-  }
-
-  #hamburger:checked ~ .hd {
     flex-direction: column;
     top: 0;
     left: 0;
@@ -613,38 +625,34 @@ footer li:hover {
     background-color: white;
   }
 
-  #hamburger:checked ~ .hd .hd-logo {
+  .hd-logo {
     padding: 20px;
   }
 
-  #hamburger:checked ~ .hd .hd-menu {
+  .hd-menu {
     flex-direction: column;
     width: 100%;
     gap: 0;
   }
 
-  #hamburger:checked ~ .hd .hd-menu li {
+  .hd-menu li {
     padding: 20px;
     display: block;
   }
 
-  #hamburger:checked ~ .hd .hd-menu li:hover {
+  .hd-menu li:hover {
     background-color: var(--login-gray);
   }
 
-  #hamburger:checked ~ .hd .selected-menu::after {
+  .hd-menu .selected-menu::after {
     display: none;
   }
 
-  #hamburger:checked ~ .hd .hd-btn {
+  .hd-btn {
     position: absolute;
     left: 0;
     bottom: 0;
     padding: 20px;
-  }
-
-  #hamburger:checked ~ .darken {
-    display: block;
   }
 
   .nav-wrapper {
@@ -692,6 +700,12 @@ footer li:hover {
     background-color: var(--main-whitegray);
     padding: 5px;
     margin-bottom: 0;
+  }
+
+  .post-title,
+  .post-content,
+  .q-info-container {
+    background-color: white;
   }
 
   .sec-bottom {
